@@ -4,6 +4,39 @@ class Produto{
         this.arrayprodutos = [];
         this.editId = null;
     }
+    iniciar(){
+        setTimeout(()=>{
+            document.getElementById('carregando').style.display = 'block';
+
+        },0)
+        setTimeout(()=>{
+            document.getElementById('carregando').style.display = 'none';
+
+        },1500)
+
+        setTimeout(()=>{
+            document.getElementById('init').style.display = 'block';
+
+        },1500)
+
+        setTimeout(()=>{
+            document.getElementById('init').style.display = 'none';
+
+        }, 3000)
+
+        setTimeout(()=>{
+            document.getElementById('init2').style.display = 'block';
+
+        }, 3000)
+
+        setTimeout(()=>{
+            document.getElementById('init2').style.display = 'none';
+            
+        }, 5000)
+
+       
+
+    }
     salvar(){   
        let produto = this.lerDados();
 
@@ -50,7 +83,7 @@ class Produto{
                 td_acoes.appendChild(imgedit)
                 td_acoes.appendChild(imgdelete)
         };
-        console.log(this.arrayprodutos) 
+        //console.log(this.arrayprodutos) 
     }
 
     adicionar(produto){
@@ -64,7 +97,7 @@ class Produto{
         let produtoString = localStorage.getItem('produtos')
 
         let produtosObj = JSON.parse(produtoString);
-        console.log(produtosObj) 
+        //console.log(produtosObj) 
     }
 
     editar(dados){
@@ -74,7 +107,7 @@ class Produto{
         document.getElementById('qt_estoque').value = dados.estoque
 
         document.querySelector('.btn1').innerText = 'Atualizar'
-        console.log(dados)
+       // console.log(dados)
     }
 
     atualizar(id, produto){
@@ -150,7 +183,7 @@ class Produto{
         }
        }
 
-       console.log(this.arrayprodutos) 
+       //console.log(this.arrayprodutos) 
     }
 
 
@@ -174,6 +207,5 @@ produto.botoes()
 let largura = window. screen.width;
 
 if(largura < 768){
-    document.getElementById('thead').style.display = 'none';
+    document.getElementById('thead').style.Width = '100px';
 }
-

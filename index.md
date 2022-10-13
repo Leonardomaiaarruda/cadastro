@@ -8,7 +8,7 @@
     <title>Cadastro</title>
 </head>
 
-<header>Cadatro de Produtos</header>
+<header>Cadastro de Produtos</header>
 
 <main>
    <section id="ajuste">
@@ -30,7 +30,7 @@
 
         <div class="lineInput">
             <label>Quantidade em estoque<label>
-            <input type="number" id="qt_estoque" placeholder="Preço do produto">
+            <input type="number" id="qt_estoque" placeholder="Quantidade do produto">
         </div>
 
         <div id="botoes">
