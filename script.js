@@ -34,7 +34,9 @@ class Produto{
             
         }, 5000)
 
-       
+        setTimeout(()=>{
+            document.getElementById('start').style.display = 'block';
+        }, 5000)
 
     }
     salvar(){   
